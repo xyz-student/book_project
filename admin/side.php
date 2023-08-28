@@ -33,7 +33,7 @@
       </div>
 
       <!-- Sidebar Menu -->
-      <nav class="mt-2">
+      <nav class="mt-2 text-capitalize">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
@@ -47,21 +47,27 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="./index.html" class="nav-link active">
+                <a href="./add_prodcut.php" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
                   <p> Add product books</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="./index2.html" class="nav-link">
+                <a href="./add_cat.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>add cat</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="./index3.html" class="nav-link">
+                <a href="./add_sub_cat.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>add sub cat</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="index.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>home</p>
                 </a>
               </li>
             </ul>
