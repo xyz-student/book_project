@@ -47,25 +47,25 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="./add_prodcut.php" class="nav-link active">
+                <a href="./add_prodcut.php" class="nav-link A">
                   <i class="far fa-circle nav-icon"></i>
                   <p> Add product books</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="./add_cat.php" class="nav-link">
+                <a href="./add_cat.php" class="nav-link B">
                   <i class="far fa-circle nav-icon"></i>
                   <p>add cat</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="./add_sub_cat.php" class="nav-link">
+                <a href="./add_sub_cat.php" class="nav-link C">
                   <i class="far fa-circle nav-icon"></i>
                   <p>add sub cat</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="index.php" class="nav-link">
+                <a href="index.php" class="nav-link D">
                   <i class="far fa-circle nav-icon"></i>
                   <p>home</p>
                 </a>
@@ -78,3 +78,5 @@
     </div>
     <!-- /.sidebar -->
   </aside>
+
+ 
