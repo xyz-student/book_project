@@ -2,7 +2,7 @@
     pro_id // cat_id // sub_cat_id // book_img // description // price //
  -->
 
- <?php
+<?php
 include "db.php";
 if (isset($_POST['submit'])) {
   $title = $_POST['title'];
@@ -13,10 +13,10 @@ if (isset($_POST['submit'])) {
 
   // image
   $image = $_FILES['image']['name'];
-  $path = "image/".$image;
+  $path = 'image/'.$image;
 
-  move_uploaded_file($_FILES['image']['tmp_name'] , $path);
-  $ins = "INSERT into `pro`(`title`,`description`,`price`,`cat_id`,`sub_id`,`image`) VALUES ('$title','$description','$price','$cat_name','$sub_cat_name',' $path')";
+  move_uploaded_file($_FILES['image']['tmp_name'], $path);
+  $ins = "INSERT into `pro`(`title`,`description`,`price`,`cat_id`,`sub_id`,`image`) VALUES ('$title','$description','$price','$cat_name','$sub_cat_name','$path')";
   $qu = mysqli_query($con, $ins);
   if ($qu) {
     header("location:index.php");
@@ -59,7 +59,8 @@ include "side.php";
             <input type="text" name="sub_cat_name" placeholder="Add sub Category Name" class="form-control mb-3">
 
             <label for="">Book Image</label>
-            <input type="file" name="image"class="form-control mb-3">
+            <input type="file" name="image" class="form-control mb-3">
+                        
 
             <label for="">title</label>
             <input type="text" name="title" placeholder="Book Title" class="form-control mb-3">
@@ -71,6 +72,7 @@ include "side.php";
             <input type="text" name="price" placeholder="Price" class="form-control mb-3">
 
             <label for="">add category name</label>
+            
             <select name="cat_name" class="form-control text-capitalize mb-3" id="">
               <option>Select here</option>
               <?php
@@ -87,7 +89,7 @@ include "side.php";
               }
               ?>
             </select>
-           
+
             <label for="">add category name</label>
             <select name="sub_cat_name" class="form-control text-capitalize" id="">
               <option>Select here</option>
@@ -111,10 +113,16 @@ include "side.php";
       </div>
       <!-- /.row (main row) -->
     </div><!-- /.container-fluid -->
+   
   </section>
 
   <!-- /.content -->
 </div>
+
+ 
+  
+  
+
 <?php
 include "footer.php";
 
