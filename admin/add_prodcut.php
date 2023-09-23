@@ -2,7 +2,7 @@
     pro_id // cat_id // sub_cat_id // book_img // description // price //
  -->
 
-<?php
+ <?php
 include "db.php";
 if (isset($_POST['submit'])) {
   $title = $_POST['title'];
@@ -73,7 +73,7 @@ include "side.php";
 
             <label for="">add category name</label>
             
-            <select name="cat_name" class="form-control text-capitalize mb-3" id="">
+            <select name="cat_name" class="form-control text-capitalize mb-3" id="category-dropdown">
               <option>Select here</option>
               <?php
               include "db.php";
@@ -91,7 +91,7 @@ include "side.php";
             </select>
 
             <label for="">add category name</label>
-            <select name="sub_cat_name" class="form-control text-capitalize" id="">
+            <select name="sub_cat_name" class="form-control text-capitalize" id="sub-category-dropdown">
               <option>Select here</option>
               <?php
               include "db.php";

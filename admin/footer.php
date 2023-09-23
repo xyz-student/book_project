@@ -1,5 +1,30 @@
  
  <!-- /.content-wrapper -->
+ 
+ <script>
+     $(document).ready(function() {
+         $('#category-dropdown').on('change', function() {
+             var cat_id = this.value;
+
+            //  alert(cat_id);
+
+             $.ajax({
+                 url: "select_sub_option.php",
+                 type: "POST",
+                 data: {
+                     cat_id: cat_id
+                 },
+                 cache: false,
+                 success: function(result) {
+                     $("#sub-category-dropdown").html(result);
+                     // alert(result);
+                 }
+             });
+         });
+     });
+ </script>
+ 
+ 
  <footer class="main-footer">
     <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
     All rights reserved.
