@@ -9,7 +9,7 @@ include "include/header.php";
 <section>
     <div class="container">
         <div class="row  ">
-            <div class="col-12 shadow-lg col-md-12 col-lg-3  ">
+            <!-- <div class="col-12 shadow-lg col-md-12 col-lg-3  ">
                 <div class="  p-3">
                     <div class="box px-4 my-2  ">
                         <p class="  fw-bold">  Filter by category</p>
@@ -37,7 +37,7 @@ include "include/header.php";
                             $query = mysqli_query($con, $sel);
                             while ($row = mysqli_fetch_array($query)) {
                             ?>
-                                <li class="my-3 "><a href="Single-author.php?pro_id=<?php echo $row['cat_id'] ?>" class="text-capitalize fw-bold  box_a"><?php echo $row['author_name'] ?></a></li>
+                                <li class="my-3 "><a href="Single-author.php?cat_id=<?php echo $row['cat_id'] ?>" class="text-capitalize fw-bold  box_a"><?php echo $row['author_name'] ?></a></li>
                             <?php
                             }
                             ?>
@@ -45,13 +45,13 @@ include "include/header.php";
                     </div>
                     
                 </div>
-            </div>
+            </div> -->
             <div class="col-12 col-md-12 col-lg-8 ">
                 <div class="row">
                     <?php
-                    $cat_id = $_GET['cat_id'];
+                    $pro_id = $_GET['pro_id'];
                     include "admin/db.php";
-                    $sel = "SELECT * FROM `pro` where `cat_id`='$cat_id'";
+                    $sel = "SELECT * FROM `pro` where `author_name`='$pro_id'";
                     $query = mysqli_query($con, $sel);
                     while ($row = mysqli_fetch_array($query)) {
                     ?>

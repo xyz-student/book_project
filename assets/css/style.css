@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap");
+
 .section-bg {
     background-color: #FEF4F4
 }
@@ -9,6 +10,14 @@ body {
     font-style: normal;
     font-size: 16px
 }
+
+.box_a {
+ 
+    color: #004288 !important;
+
+}
+
+ 
 
 h1,
 h2,
@@ -209,9 +218,11 @@ hr {
     0% {
         transform: translateY(-3px)
     }
+
     50% {
         transform: translateY(3px)
     }
+
     100% {
         transform: translateY(-3px)
     }
@@ -270,6 +281,7 @@ hr {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg)
     }
+
     to {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg)
@@ -280,6 +292,7 @@ hr {
     from {
         -webkit-transform: rotate(0deg)
     }
+
     to {
         -webkit-transform: rotate(360deg)
     }
@@ -294,20 +307,25 @@ hr {
 }
 
 @keyframes nudge {
+
     0%,
     100% {
         transform: translate(0, 0)
     }
+
     50% {
         transform: translate(-100px, 0);
+
         @media (max-width: 575px) {
-            transform:translate(-50px, 0) !important
+            transform: translate(-50px, 0) !important
         }
     }
+
     80% {
         transform: translate(100px, 0);
+
         @media (max-width: 575px) {
-            transform:translate(50px, 0) !important
+            transform: translate(50px, 0) !important
         }
     }
 }
@@ -1413,8 +1431,23 @@ hr {
     background-image: url(../img/hero/h1_hero1.jpg)
 }
 
-.slider-bg2 {
-    background-image: url(../img/hero/h1_hero2.jpg)
+.cat_bg {
+    background-image: url(../img/hero/h2_hero1.jpg);
+    height: 30vh;
+    background-position: bottom;
+    margin: auto;
+    width: 80%;
+    background-size: cover;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+
+}
+
+.cat_bg h2 {
+    color: #fff;
 }
 
 .slider-bg3 {
@@ -4586,9 +4619,11 @@ hr {
     .comments-area .comment-list .single-comment h5 {
         font-size: 12px
     }
+
     .comments-area .comment-list .single-comment .date {
         font-size: 11px
     }
+
     .comments-area .comment-list .single-comment .comment {
         font-size: 10px
     }
@@ -5711,7 +5746,7 @@ del {
     position: relative;
     cursor: pointer
 }
- 
+
 .primary-radio input {
     position: absolute;
     left: 0;
