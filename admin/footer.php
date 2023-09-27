@@ -1,7 +1,7 @@
  
  <!-- /.content-wrapper -->
  
- <script>
+ <!-- <script>
      $(document).ready(function() {
          $('#category-dropdown').on('change', function() {
              var cat_id = this.value;
@@ -22,7 +22,7 @@
              });
          });
      });
- </script>
+ </script> -->
  
  
  <footer class="main-footer">

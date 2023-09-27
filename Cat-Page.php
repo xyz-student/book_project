@@ -37,7 +37,7 @@ include "include/header.php";
                             $query = mysqli_query($con, $sel);
                             while ($row = mysqli_fetch_array($query)) {
                             ?>
-                                <li class="my-3 "><a href="Single-author.php?pro_id=<?php echo $row['cat_id'] ?>" class="text-capitalize fw-bold  box_a"><?php echo $row['author_name'] ?></a></li>
+                                <li class="my-3 "><a href="Single-author.php?sub_id=<?php echo $row['sub_id'] ?>" class="text-capitalize fw-bold  box_a"><?php echo $row['author_name'] ?></a></li>
                             <?php
                             }
                             ?>

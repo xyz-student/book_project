@@ -11,10 +11,11 @@ body {
     font-size: 16px
 }
 
-.box_a {
- 
-    color: #004288 !important;
-
+.box_a >p{
+ font-weight: 400 !important;
+    color: #232F55 !important;
+font-size: 17px;
+text-transform: capitalize;
 }
 
  
