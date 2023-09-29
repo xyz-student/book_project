@@ -46,40 +46,40 @@ include "include/header.php";
             <div class="row">
               <!--  -->
               <?php
-                        include "admin/db.php";
-                        $sel = "SELECT * FROM `pro`";
-                        $query = mysqli_query($con, $sel);
-                        while ($row = mysqli_fetch_array($query)) {
-                        ?>
-              <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-12 col-sm-6">
-                <div class="properties pb-30">
-                  <div class="properties-card">
-                    <div class="properties-img">
-                      <a href="book-details.html"><img src="admin/<?php echo $row['image'] ?>" alt></a>
-                    </div>
-                    <div class="properties-caption properties-caption2">
-                      <h3><a href="book-details.html"><?php echo $row['title'] ?></a></h3>
-                      <p><?php echo $row['title'] ?></p>
-                      <div class="properties-footer d-flex justify-content-between align-items-center">
-                        <div class="review">
-                          <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
+              include "admin/db.php";
+              $sel = "SELECT * FROM `pro`";
+              $query = mysqli_query($con, $sel);
+              while ($row = mysqli_fetch_array($query)) {
+              ?>
+                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-12 col-sm-6">
+                  <div class="properties pb-30">
+                    <div class="properties-card">
+                      <div class="properties-img">
+                        <a href="book-details.html"><img src="admin/<?php echo $row['image'] ?>" alt></a>
+                      </div>
+                      <div class="properties-caption properties-caption2">
+                        <h3><a href="book-details.html"><?php echo $row['title'] ?></a></h3>
+                        <p><?php echo $row['title'] ?></p>
+                        <div class="properties-footer d-flex justify-content-between align-items-center">
+                          <div class="review">
+                            <div class="rating">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p>(<span>120</span> Review)</p>
                           </div>
-                          <p>(<span>120</span> Review)</p>
-                        </div>
-                        <div class="price">
-                          <span>$<?php echo $row['price'] ?></span>
+                          <div class="price">
+                            <span>$<?php echo $row['price'] ?></span>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <!--  -->
+                <!--  -->
               <?php } ?>
 
             </div>

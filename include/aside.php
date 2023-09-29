@@ -27,9 +27,9 @@
                 </div>
                 <!--  -->
                 <?php
-                $cat_id = $_GET['cat_id'];
+                // $cat_id = $_GET['cat_id'];
                 include "admin/db.php";
-                $sel = "SELECT * FROM `sub_cat` where `cat_id`='$cat_id'";
+                $sel = "SELECT * FROM `sub_cat` ";
                 $query = mysqli_query($con, $sel);
                 while ($row = mysqli_fetch_array($query)) {
                 ?>

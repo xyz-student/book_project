@@ -11,33 +11,35 @@ include "include/header.php";
         <div class="row  ">
             <div class="col-12 shadow-lg col-md-12 col-lg-3  ">
                 <div class="  p-3">
-                    <div class="box px-4 my-2  ">
+                    <!-- <div class="box px-4 my-2  ">
                         <p class="  fw-bold"> Filter by category</p>
                         <ul class="list-unstyled">
-                            <?php
+                            ?php
+                             
+
                             include "admin/db.php";
-                            $sel = "SELECT * FROM `cat`";
+                            $sel = "SELECT * FROM `cat`   ";
                             $query = mysqli_query($con, $sel);
                             while ($row = mysqli_fetch_array($query)) {
                             ?>
-                                <li class="my-3"><a href="Cat-Page.php?cat_id=<?php echo $row['cat_id'] ?>" class="text-capitalize fw-bold  box_a"><?php echo $row['cat_name'] ?></a></li>
+                                <li class="my-3"><a href="Cat-Page.php?cat_id=?php echo $row['cat_id'] ?>" class="text-capitalize fw-bold  box_a">?php echo $row['cat_name'] ?></a></li>
 
-                            <?php
+                            ?php
                             }
                             ?>
                         </ul>
-                    </div>
+                    </div> -->
                     <div class="box px-4 py-4 my-2  ">
                         <p class="  fw-bold">Filter by price</p>
                         <ul class="list-unstyled">
                             <?php
-
+                            $sub_id = $_GET['sub_id'];
                             include "admin/db.php";
-                            $sel = "SELECT * FROM `sub_cat`  ";
+                            $sel = "SELECT * FROM `sub_cat` where `sub_id`='$sub_id'  ";
                             $query = mysqli_query($con, $sel);
                             while ($row = mysqli_fetch_array($query)) {
                             ?>
-                                <li class="my-3 "><a href="Single-author.php?sub_id=<?php echo $row['sub_id'] ?>" class="text-capitalize fw-bold  box_a"><?php echo $row['author_name'] ?></a></li>
+                                <li class="my-3 "><a href=" " class="text-capitalize fw-bold  box_a"><?php echo $row['author_name'] ?></a></li>
                             <?php
                             }
                             ?>

@@ -15,8 +15,10 @@ include "include/header.php";
                         <p class="  fw-bold">  Filter by category</p>
                         <ul class="list-unstyled">
                             <?php
+                            $cat_id = $_GET['cat_id'];
+
                             include "admin/db.php";
-                            $sel = "SELECT * FROM `cat`";
+                            $sel = "SELECT * FROM `cat` where `cat_id`='$cat_id' ";
                             $query = mysqli_query($con, $sel);
                             while ($row = mysqli_fetch_array($query)) {
                             ?>
