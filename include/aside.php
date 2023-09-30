@@ -14,7 +14,7 @@
                 ?>
                     <!-- <li class="my-3"><a href="" class="text-capitalize fw-bold  box_a"></a></li> -->
                     <a href="Cat-Page.php?cat_id=<?php echo $row['cat_id'] ?>" class="box_a">
-                        <p><i class="fa-solid fa-circle-check "></i> <?php echo $row['cat_name'] ?></p>
+                        <p><i class="fa-solid fa-circle-check " style="color: #ff1616;"></i> <?php echo $row['cat_name'] ?></p>
                     </a>
                 <?php
                 }
@@ -35,7 +35,7 @@
                 ?>
 
                     <a href="Single-author.php?sub_id=<?php echo $row['sub_id'] ?>" class="box_a">
-                        <p><i class="fa-solid fa-circle-check "></i> <?php echo $row['author_name'] ?></p>
+                        <p><i class="fa-solid fa-circle-check " style="color: #ff1616;"></i> <?php echo $row['author_name'] ?></p>
                     </a>
                 <?php
                 }

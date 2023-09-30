@@ -112,12 +112,14 @@
                                             <a href="index.html"><img src="assets/img/logo/logo.png" alt></a>
                                         </div>
 
-                                        <form action="#" class="form-box">
-                                            <input type="text" name="Search" placeholder="Search book by author or publisher">
+                                        <form action="#" method="post" class="form-box">
+                                            <input type="text" name="cat_name" placeholder="Search book by author or publisher">
+                                            <!-- <input type="search" name="submit"> -->
                                             <div class="search-icon">
                                                 <i class="ti-search"></i>
                                             </div>
                                         </form>
+                                        
                                     </div>
                                     <div class="header-info-right d-flex align-items-center">
                                         <ul>
